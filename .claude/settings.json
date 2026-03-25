@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias \"@/*\" --yes)",
+      "Bash(mkdir -p temp_init)",
+      "Bash(mv \"gilded-glow-skin-prompt.md\" temp_init/)",
+      "Bash(cp -r \"d:/escritorio/nextapp_temp/gilded/.\" \"d:/escritorio/gildedglowskin/\")",
+      "Bash(rm -rf \"d:/escritorio/nextapp_temp\")",
+      "Bash(mv \"d:/escritorio/gildedglowskin/temp_init/gilded-glow-skin-prompt.md\" \"d:/escritorio/gildedglowskin/\")",
+      "Bash(rmdir \"d:/escritorio/gildedglowskin/temp_init\")",
+      "Bash(npm install:*)",
+      "Bash(mkdir -p \"d:/escritorio/gildedglowskin/app/productos/[slug]\")",
+      "Bash(mkdir -p \"d:/escritorio/gildedglowskin/app/guia/[slug]\")",
+      "Bash(mkdir -p \"d:/escritorio/gildedglowskin/app/admin/productos/[id]\")",
+      "Bash(mkdir -p \"d:/escritorio/gildedglowskin/app/admin/guias/[id]\")",
+      "Bash(npx tsc:*)",
+      "Bash(node -e \"const l = require\\(''lucide-react''\\); console.log\\(Object.keys\\(l\\).filter\\(k => k.toLowerCase\\(\\).includes\\(''insta''\\)\\)\\)\")",
+      "Bash(npm run:*)",
+      "Bash(node -e \":*)"
+    ]
+  }
+}
