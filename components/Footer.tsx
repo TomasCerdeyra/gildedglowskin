@@ -1,5 +1,8 @@
+"use client";
+
 import Link from "next/link";
 import { MessageCircle } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 function InstagramIcon({ size = 18 }: { size?: number }) {
   return (
@@ -22,7 +25,12 @@ function InstagramIcon({ size = 18 }: { size?: number }) {
 }
 
 export default function Footer() {
+  const pathname = usePathname();
   const whatsappLink = `https://wa.me/5493329516376?text=${encodeURIComponent("Hola! Quisiera más información.")}`;
+
+  if (pathname?.startsWith("/admin") || pathname?.startsWith("/auth")) {
+    return null;
+  }
 
   return (
     <footer className="bg-[#4A4A4A] text-white">
