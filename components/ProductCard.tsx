@@ -50,10 +50,10 @@ export default function ProductCard({ producto, index = 0 }: ProductCardProps) {
 
       {/* Content */}
       <div className="p-4 flex flex-col gap-3 flex-1">
-        <h3 className="font-display font-semibold text-[#4A4A4A] text-base leading-snug line-clamp-2">
+        <h3 className="font-display font-bold text-gray-900 text-base leading-snug line-clamp-2">
           {producto.nombre}
         </h3>
-        <p className="text-sm text-[#4A4A4A]/70 line-clamp-2 flex-1">
+        <p className="text-sm text-gray-600 line-clamp-2 flex-1">
           {producto.descripcion_corta}
         </p>
 

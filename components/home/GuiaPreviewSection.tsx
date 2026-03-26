@@ -52,11 +52,11 @@ export default function GuiaPreviewSection({ guias }: GuiaPreviewSectionProps) {
                       {guia.productos.nombre}
                     </span>
                   )}
-                  <h3 className="font-display font-semibold text-[#4A4A4A] text-base mb-2 line-clamp-2">
+                  <h3 className="font-display font-bold text-gray-900 text-base mb-2 line-clamp-2">
                     {guia.titulo}
                   </h3>
                   {guia.subtitulo && (
-                    <p className="text-sm text-[#4A4A4A]/60 line-clamp-2 mb-4">
+                    <p className="text-sm text-gray-600 line-clamp-2 mb-4">
                       {guia.subtitulo}
                     </p>
                   )}

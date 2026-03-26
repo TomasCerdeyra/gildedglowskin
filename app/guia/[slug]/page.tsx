@@ -73,7 +73,7 @@ export default async function GuiaPage({ params }: Props) {
 
       <div className="min-h-screen bg-[#FFF9F9]">
         {/* Banner */}
-        <div className="relative h-64 sm:h-80 lg:h-96 mt-0">
+        <div className="relative min-h-[320px] sm:min-h-[400px] flex flex-col justify-end mt-0">
           <Image
             src={guia.imagen_banner || "/placeholder-guide.jpg"}
             alt={guia.titulo}
@@ -82,14 +82,14 @@ export default async function GuiaPage({ params }: Props) {
             priority
             sizes="100vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#8B1E2D]/60 to-transparent" />
-          <div className="absolute bottom-0 left-0 right-0 p-6 sm:p-10">
+          <div className="absolute inset-0 bg-gradient-to-t from-[#8B1E2D]/80 via-transparent to-transparent" />
+          <div className="relative z-10 w-full p-6 pt-24 sm:p-10 sm:pt-32">
             <div className="max-w-4xl mx-auto">
               <h1 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight">
                 {guia.titulo}
               </h1>
               {guia.subtitulo && (
-                <p className="text-white/80 mt-2 text-lg">{guia.subtitulo}</p>
+                <p className="text-white/90 mt-3 text-base sm:text-lg">{guia.subtitulo}</p>
               )}
             </div>
           </div>
